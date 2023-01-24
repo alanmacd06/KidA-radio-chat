@@ -10,4 +10,7 @@ radio.onReceivedString(function (receivedString) {
 input.onButtonPressed(Button.B, function () {
     radio.sendString("What up?")
 })
+input.onGesture(Gesture.Shake, function () {
+    radio.sendString("Stop texting me or else")
+})
 radio.setGroup(1)
